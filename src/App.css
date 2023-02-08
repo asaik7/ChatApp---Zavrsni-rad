@@ -1,0 +1,123 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: white;
+    width: 60%;
+    margin-left: 20%;
+    border: solid 2px  rgb(226, 106, 226);
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+
+   }
+
+   body{
+    background-image: url("../images/pexels-dom-j-310452.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+    
+
+  
+  .App-header {
+    background-color: rgb(226, 106, 226);
+    overflow: visible;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    border:  rgb(226, 106, 226);
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+   
+  }
+  
+  .Messages-list {
+    padding: 20px 0;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    list-style: none;
+    padding-left: 0;
+    flex-grow: 1;
+    overflow: auto;
+  }
+  
+  .Messages-message {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .Messages-message.currentMember {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+  
+  .Message-content {
+    display: inline-block;
+  }
+  
+  .currentMember > .Message-content {
+    align-items: flex-end;
+  }
+  
+  .Messages-message > .avatar {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 10px -10px;
+  }
+  
+  .Message-content > .username {
+    display: block;
+    color: black;
+    font-size: 16px;
+    padding-bottom: 4px;
+  }
+  
+  .Message-content > .text {
+    padding: 10px;
+    max-width: 400px;
+    margin: 0;
+    border-radius: 12px;
+    background-color: cornflowerblue;
+    color: white;
+    display: inline-block;
+  }
+  
+  .currentMember > .Message-content .text {
+    background-color: rgb(255, 0, 76);
+  }
+  
+  form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 750px;
+    margin: 0 auto 40px;
+  }
+  
+  input {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid gray;
+    color: black;
+    flex-grow: 1;
+    
+  }
+  
+  button {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: rgb(245, 195, 30);
+    color: black;
+    border: none;
+    border-radius: 8px;
+    margin-left: 10px;
+  }
